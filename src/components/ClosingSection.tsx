@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import bordadoResultado from "@/assets/bordado-resultado-new.webp";
+import { getCheckoutUrl } from "@/lib/utm";
 
 const ClosingSection = () => {
   return (
@@ -51,7 +52,15 @@ const ClosingSection = () => {
             </div>
 
             <motion.a
-              href="#oferta"
+              href={getCheckoutUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => {
+                const w = window as Window & { fbq?: (...args: unknown[]) => void };
+                if (typeof w.fbq === "function") {
+                  w.fbq("track", "InitiateCheckout");
+                }
+              }}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="inline-block gradient-cta text-primary-foreground font-body font-semibold 
