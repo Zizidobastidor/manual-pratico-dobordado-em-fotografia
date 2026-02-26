@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { getCheckoutUrl } from "@/lib/utm";
 
 const PricingSection = () => {
   return (
@@ -64,7 +65,15 @@ const PricingSection = () => {
             </div>
 
             <motion.a
-              href="#"
+              href={getCheckoutUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => {
+                const w = window as Window & { fbq?: (...args: unknown[]) => void };
+                if (typeof w.fbq === "function") {
+                  w.fbq("track", "InitiateCheckout");
+                }
+              }}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="inline-block w-full gradient-cta text-primary-foreground font-body font-semibold 
