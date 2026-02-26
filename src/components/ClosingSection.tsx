@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bordadoResultado from "@/assets/bordado-resultado-new.png";
+import bordadoResultado from "@/assets/bordado-resultado-new.webp";
 
 const ClosingSection = () => {
   return (
