@@ -29,9 +29,9 @@ const HeroSection = () => {
               </span>
             </h1>
 
-            <p className="font-heading text-xl md:text-2xl text-earth-light italic mb-8">
-              Estrutura Essencial — Onde memórias ganham nova vida através da linha e da agulha.
-            </p>
+            <h2 className="font-heading text-xl md:text-2xl text-earth-light italic mb-8">
+              Como bordar em fotografia e transformar memórias em arte com linha e agulha.
+            </h2>
 
             <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg mb-10">
               Existe uma fotografia guardada que você não olha há tempos. Talvez esteja numa gaveta, 

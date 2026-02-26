@@ -10,6 +10,22 @@ const WhatIsSection = () => {
   return (
     <section className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
+        {/* SEO content block */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="max-w-3xl mx-auto mb-20 font-body text-muted-foreground leading-relaxed text-base md:text-lg text-center"
+        >
+          <p>
+            Se você está procurando <strong>como bordar em fotografia</strong>, este manual foi criado exatamente para isso. 
+            Aqui você aprende a técnica de bordado em foto de forma estruturada, entendendo como bordar sobre foto impressa 
+            com segurança e intenção artística. O objetivo não é apenas ensinar pontos, mas mostrar como transformar foto em 
+            bordado com significado.
+          </p>
+        </motion.div>
+
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             variants={fadeUp}
