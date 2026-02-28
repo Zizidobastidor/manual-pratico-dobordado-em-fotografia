@@ -1,5 +1,5 @@
 export function getCheckoutUrl(): string {
-  const base = "https://pay.hotmart.com/B102258759G?off=4z8xgbb1&checkoutMode=10";
+  const base = "https://pay.hotmart.com/A104682313C?off=04alisai&checkoutMode=10";
   const params = new URLSearchParams(window.location.search);
   const utmKeys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "src", "sck"];
   const utmParams = new URLSearchParams();
