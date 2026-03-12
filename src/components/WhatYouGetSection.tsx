@@ -49,6 +49,8 @@ const items = [
     description:
       "Bônus criativo com referências visuais para despertar ideias e nutrir o seu olhar artístico.",
     value: "R$ 9,90",
+    image: galeriaInspiracoes,
+    imageAlt: "Ideias para Bordar em Fotografia — Galeria de Inspirações",
   },
 ];
 
