@@ -38,7 +38,7 @@ const items = [
     icon: Wand2,
     title: "Aula: A Magia do Transfer",
     description:
-      "Descubra como transferir qualquer fotografia do papel para o tecido. Uma técnica essencial que abre possibilidades infinitas.",
+      "Muitas alunas chegam com um medo silencioso: \"e se eu furar a fotografia original e estragar para sempre?\" A Magia do Transfer resolve isso. Você aprende a criar uma cópia da sua fotografia no tecido — e borda sobre ela. A foto original fica intacta. O medo desaparece. Essa aula é vendida separado por R$84,00. Aqui ela já está incluída na Estrutura Essencial.",
     value: "R$ 84,00",
     image: magiaTransfer,
     imageAlt: "A Magia do Gel Transfer — Como transferir a Fotografia para o tecido",
