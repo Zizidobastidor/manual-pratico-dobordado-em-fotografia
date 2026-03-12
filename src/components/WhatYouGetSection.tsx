@@ -3,6 +3,7 @@ import { BookOpen, Play, Image, Wand2, GalleryHorizontalEnd } from "lucide-react
 import manualPratico from "@/assets/manual-pratico.png";
 import miniCurso from "@/assets/mini-curso-5-pontos.png";
 import albumRiscos from "@/assets/album-riscos.png";
+import magiaTransfer from "@/assets/magia-gel-transfer.png";
 
 const items = [
   {
