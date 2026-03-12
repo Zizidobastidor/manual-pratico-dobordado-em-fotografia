@@ -4,6 +4,7 @@ import manualPratico from "@/assets/manual-pratico.png";
 import miniCurso from "@/assets/mini-curso-5-pontos.png";
 import albumRiscos from "@/assets/album-riscos.png";
 import magiaTransfer from "@/assets/magia-gel-transfer.png";
+import galeriaInspiracoes from "@/assets/galeria-inspiracoes.png";
 
 const items = [
   {
@@ -48,6 +49,8 @@ const items = [
     description:
       "Bônus criativo com referências visuais para despertar ideias e nutrir o seu olhar artístico.",
     value: "R$ 9,90",
+    image: galeriaInspiracoes,
+    imageAlt: "Ideias para Bordar em Fotografia — Galeria de Inspirações",
   },
 ];
 
