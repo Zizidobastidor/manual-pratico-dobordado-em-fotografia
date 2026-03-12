@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import maeEFilha from "@/assets/mae-e-filha-juntas.png";
 
 const AuthorSection = () => {
   return (
