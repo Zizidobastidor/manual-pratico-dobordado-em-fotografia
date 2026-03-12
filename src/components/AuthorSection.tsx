@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import maeEFilha from "@/assets/mae-e-filha-juntas.png";
 
 const AuthorSection = () => {
   return (
@@ -33,10 +34,8 @@ const AuthorSection = () => {
           <div className="grid md:grid-cols-[280px_1fr] gap-10 items-start">
             {/* Photo placeholder */}
             <div className="mx-auto md:mx-0">
-              <div className="w-64 h-72 rounded-2xl bg-card border-2 border-dashed border-border flex items-center justify-center shadow-soft overflow-hidden">
-                <p className="font-body text-muted-foreground text-sm text-center px-4">
-                  📷 Inserir foto da mãe e filha bordando
-                </p>
+              <div className="w-64 h-72 rounded-2xl bg-card shadow-soft overflow-hidden">
+                <img src={maeEFilha} alt="Mãe e filha juntas — bordado em fotografia" className="w-full h-full object-cover" />
               </div>
             </div>
 
