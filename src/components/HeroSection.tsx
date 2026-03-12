@@ -24,17 +24,45 @@ const HeroSection = () => {
             </p>
 
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-light leading-[1.15] text-foreground mb-6 text-balance">
-              Manual Prático do{" "}
+              Se você tem uma fotografia guardada que ainda não teve coragem de tocar —{" "}
               <span className="italic text-primary font-medium">
-                Bordado em Fotografia
+                a Estrutura Essencial foi feita pra você.
               </span>
             </h1>
 
             <h2 className="font-heading text-xl md:text-2xl text-earth-light italic mb-8">
-              Como bordar em fotografia e transformar memórias em arte com linha e agulha.
+              Tudo que você precisa para dar o primeiro gesto, aprender os melhores pontos,
+              transferir a imagem para o tecido e bordar com alma.
+              <br />
+              <span className="text-primary font-medium not-italic">
+                Por R$157,90
+              </span>{" "}
+              — ao invés de R$213,70 comprado separado.
             </h2>
 
-            <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg mb-10">
+            {/* Bloco Gel Transfer */}
+            <div className="bg-card/80 border-l-4 border-primary/60 rounded-xl p-6 mb-10">
+              <p className="font-body text-foreground leading-relaxed text-base mb-3">
+                A maioria das pessoas que quer bordar em fotografia trava em um ponto:
+              </p>
+              <p className="font-heading text-lg italic text-primary mb-3">
+                "Mas eu não quero furar a fotografia original."
+              </p>
+              <p className="font-body text-foreground leading-relaxed text-base mb-3">
+                A Estrutura Essencial resolve isso com a <strong>Aula A Magia do Transfer</strong>.
+              </p>
+              <p className="font-body text-muted-foreground leading-relaxed text-sm mb-3">
+                Você aprende a criar uma cópia exata da sua fotografia no tecido — e borda sobre ela.
+                <br />
+                A foto original fica intacta. O medo desaparece.
+              </p>
+              <p className="font-body text-muted-foreground text-sm">
+                Essa aula é vendida separado por <span className="line-through">R$84,00</span>.{" "}
+                <span className="text-primary font-semibold">Aqui ela já está incluída.</span>
+              </p>
+            </div>
+
+            <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg mb-6">
               Existe uma fotografia guardada que você não olha há tempos. Talvez esteja numa gaveta, 
               talvez no celular. Mas quando você a vê… algo se move. Uma saudade. Um sorriso interrompido. 
               Um momento que merecia ter durado mais.
