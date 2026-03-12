@@ -4,6 +4,7 @@ import manualPratico from "@/assets/manual-pratico.png";
 import miniCurso from "@/assets/mini-curso-5-pontos.png";
 import albumRiscos from "@/assets/album-riscos.png";
 import magiaTransfer from "@/assets/magia-gel-transfer.png";
+import galeriaInspiracoes from "@/assets/galeria-inspiracoes.png";
 
 const items = [
   {
