@@ -39,6 +39,8 @@ const items = [
     description:
       "Descubra como transferir qualquer fotografia do papel para o tecido. Uma técnica essencial que abre possibilidades infinitas.",
     value: "R$ 84,00",
+    image: magiaTransfer,
+    imageAlt: "A Magia do Gel Transfer — Como transferir a Fotografia para o tecido",
   },
   {
     icon: GalleryHorizontalEnd,
