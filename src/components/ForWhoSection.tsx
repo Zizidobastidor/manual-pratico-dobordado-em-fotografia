@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Heart, Sparkles, Camera, Palette } from "lucide-react";
+import bordadoFotografia1 from "@/assets/bordado-em-fotografia-1.png";
 
 const audiences = [
   {
