@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Heart, Sparkles, Camera, Palette } from "lucide-react";
+import bordadoFotografia1 from "@/assets/bordado-em-fotografia-1.png";
 
 const audiences = [
   {
@@ -23,6 +24,22 @@ const audiences = [
 const ForWhoSection = () => {
   return (
     <section className="py-24 md:py-32 gradient-warm">
+      {/* Image banner */}
+      <div className="container mx-auto px-6 mb-16">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.97 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="max-w-2xl mx-auto"
+        >
+          <img
+            src={bordadoFotografia1}
+            alt="Mãos bordando flores coloridas em fotografia no bastidor"
+            className="w-full rounded-2xl shadow-soft"
+          />
+        </motion.div>
+      </div>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
