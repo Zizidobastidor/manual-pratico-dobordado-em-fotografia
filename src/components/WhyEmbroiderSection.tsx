@@ -1,9 +1,26 @@
 import { motion } from "framer-motion";
 import { Eye } from "lucide-react";
+import fotoPaiCavalete from "@/assets/foto-pai-cavalete.png";
 
 const WhyEmbroiderSection = () => {
   return (
     <section className="py-24 md:py-32 gradient-warm">
+      {/* Image banner before content */}
+      <div className="container mx-auto px-6 mb-16">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.97 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="max-w-2xl mx-auto"
+        >
+          <img
+            src={fotoPaiCavalete}
+            alt="Fotografia bordada em cavalete — bordado em fotografia com flores coloridas"
+            className="w-full rounded-2xl shadow-soft"
+          />
+        </motion.div>
+      </div>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
