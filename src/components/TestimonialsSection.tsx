@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
+import { getCheckoutUrl } from "@/lib/utm";
 
 const testimonials = [
   {
@@ -66,6 +67,40 @@ const TestimonialsSection = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* CTA after testimonials */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-center mt-14"
+        >
+          <p className="font-heading text-xl md:text-2xl font-light text-foreground italic mb-6">
+            A próxima história que vai me contar pode ser a sua.
+          </p>
+          <motion.a
+            href={getCheckoutUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              const w = window as Window & { fbq?: (...args: unknown[]) => void };
+              if (typeof w.fbq === "function") {
+                w.fbq("track", "InitiateCheckout");
+              }
+            }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="inline-block gradient-cta text-primary-foreground font-body font-semibold
+              px-10 py-4 rounded-full shadow-cta transition-all duration-300
+              hover:opacity-95 text-base tracking-wide"
+          >
+            Quero transformar minhas memórias em arte
+          </motion.a>
+          <p className="font-body text-xs text-muted-foreground mt-3">
+            🔒 Garantia de 7 dias — sem perguntas
+          </p>
+        </motion.div>
       </div>
     </section>
   );
