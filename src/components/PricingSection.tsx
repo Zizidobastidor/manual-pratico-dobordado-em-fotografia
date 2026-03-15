@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ShieldCheck } from "lucide-react";
 import { getCheckoutUrl } from "@/lib/utm";
 
 const PricingSection = () => {
@@ -28,7 +29,7 @@ const PricingSection = () => {
                 <span>R$ 57,00</span>
               </div>
               <div className="flex justify-between">
-                <span>Mini Curso – 5 Pontos Essenciais</span>
+                <span>Mini Curso — 5 Pontos Essenciais</span>
                 <span>R$ 34,90</span>
               </div>
               <div className="flex justify-between">
@@ -76,14 +77,21 @@ const PricingSection = () => {
               }}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-block w-full gradient-cta text-primary-foreground font-body font-semibold 
-                px-10 py-4 rounded-full shadow-cta transition-all duration-300 
+              className="inline-block w-full gradient-cta text-primary-foreground font-body font-semibold
+                px-10 py-4 rounded-full shadow-cta transition-all duration-300
                 hover:opacity-95 text-base tracking-wide text-center"
             >
               Quero transformar minhas memórias em arte
             </motion.a>
 
-            <p className="font-body text-xs text-muted-foreground mt-4">
+            <div className="flex items-center justify-center gap-2 mt-4">
+              <ShieldCheck className="w-4 h-4 text-accent flex-shrink-0" />
+              <p className="font-body text-xs text-muted-foreground">
+                Garantia de 7 dias — se não gostar, devolvemos tudo. Sem perguntas.
+              </p>
+            </div>
+
+            <p className="font-body text-xs text-muted-foreground mt-2">
               Acesso imediato após confirmação do pagamento
             </p>
           </div>
